@@ -3,34 +3,42 @@
 The variables selected for this assignment come from the dataset "accelerometers of Samsung Galaxy S smartphones", which has data from the accelerometer and gyroscope. 
 
 The signals were used to estimate variables of the feature vector for each pattern:  
-**'-XYZ'** is used to denote 3-axial signals in the X, Y and Z directions.
-**prefix 't'** denote time;
-**prefix 'f'** denote Fast Fourier Transform (FFT);
-**Acceleration** Acc; separated into: 
-- body (tBodyAcc)
-- gravity (tGravityAcc)
 
-**Body linear acceleration** and **angular velocity** were derived in time to obtain Jerk signals, respectively
--tBodyAccJerk and tBodyGyroJerk 
+- **'-XYZ'** is used to denote 3-axial signals in the X, Y and Z directions.
 
-**Mean** denotes variable mean for determined observation.
-**STD** denotes Standard Deviation for determined observation.
-**meanFreq** Weighted average of the frequency components to obtain a mean frequency
+- **prefix 't'** denote time;
 
+-  **prefix 'f'** denote Fast Fourier Transform (FFT);
 
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+- **Acceleration** Acc; separated into: 
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+-- body (tBodyAcc)
 
-**Activity Name** refers to activities the participant performed, such as WALKING, wearing a smartphone (Samsung Galaxy S II) on the waist.
-**Subject_ID** is the subject identifier.
+-- gravity (tGravityAcc)
+
+- **Body linear acceleration** and **angular velocity** were derived in time to obtain Jerk signals, respectively
+
+--tBodyAccJerk and tBodyGyroJerk 
+
+- **Mean** denotes variable mean for determined observation.
+
+- **STD** denotes Standard Deviation for determined observation.
+
+- **meanFreq** Weighted average of the frequency components to obtain a mean frequency
 
 
-### Variables ##
+- Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+-- gravityMean
+-- tBodyAccMean
+-- tBodyAccJerkMean
+-- tBodyGyroMean
+-- tBodyGyroJerkMean
+
+- **Activity Name** refers to activities the participant performed, such as WALKING, wearing a smartphone (Samsung Galaxy S II) on the waist.
+- **Subject_ID** is the subject identifier.
+
+### Variables ###
 
 'Activity_Name'
 'Subject_ID'
