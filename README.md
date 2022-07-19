@@ -17,6 +17,31 @@ For each record it is provided:
 - Variables with time and frequency domain variables, by subject and by activity label.
 - An identifier of the subject who carried out the experiment.
 
+The Analysis:
+=========================================
+
+It was made using tidyverse package,  built under R version 4.1.3.
+
+Steps for analysis:
+1) Download the original data
+2) Unzip the files contained
+3) Merges the training and the test sets to create one data set
+3.1) Name columns for both datasets using the features data
+3.2) Read data sets X_Train and X_Test txt files
+3.3) Add subjects for both datasets using the Subject_Test and Subject_Train files
+3.4) Add labels for both datasets using the Label_Test and Label_Train files
+3.5) Bind train and test dataframes
+4) Extracts only the measurements on the mean and standard deviation for each measurement.
+# Mean = mean
+# Standard Deviation = std
+# V1 = Activities_ID and Subject_ID
+5) Uses descriptive activity names to name the activities in the data set
+# Walking, Walking_Upstairs, etc. 
+6) Appropriately labels the data set with descriptive variable names.
+# tBodyAccmeanX (see codebook for more examples)
+7) From the data set, creates a second with the average of each variable for each activity and each subject.
+
+
 The dataset includes the following files:
 =========================================
 
@@ -26,8 +51,16 @@ The dataset includes the following files:
 
 - 'run_analysis.R ': Code and Comments
 
+- 'Assignment.ipynb' : Jupyter Notebook file, with the code read.
+
+- 'Dataset.zip' : Zip withe the files needed for analysis
+
+- 'UCI HAR Dataset' : Files needed for analysis
+
+
 Notes: 
 ======
+- File names are correspondent to the original source
 - Features are normalized and bounded within [-1,1].
 - Each activity is grouped by subject ID
 - Original data avaible at:  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  
