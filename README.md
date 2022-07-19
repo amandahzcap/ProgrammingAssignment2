@@ -32,13 +32,13 @@ Steps for analysis:
 3.4) Add labels for both datasets using the Label_Test and Label_Train files
 3.5) Bind train and test dataframes
 4) Extracts only the measurements on the mean and standard deviation for each measurement.
-# Mean = mean
-# Standard Deviation = std
-# V1 = Activities_ID and Subject_ID
+- Mean = mean
+- Standard Deviation = std
+- V1 = Activities_ID and Subject_ID
 5) Uses descriptive activity names to name the activities in the data set
-# Walking, Walking_Upstairs, etc. 
+- Walking, Walking_Upstairs, etc. 
 6) Appropriately labels the data set with descriptive variable names.
-# tBodyAccmeanX (see codebook for more examples)
+- tBodyAccmeanX (see codebook for more examples)
 7) From the data set, creates a second with the average of each variable for each activity and each subject.
 
 
